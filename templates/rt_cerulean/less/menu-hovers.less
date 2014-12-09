@@ -1,0 +1,149 @@
+@import "variables.less";
+@import "/jui/less/mixins.less";
+@import "mixins/index.less";
+
+.gf-menu {
+	// Bottom border fixer
+	&.l1 > li {
+		&:hover > .item {
+			margin-top: 6px;
+			.border-radius(@menuItemRadius);
+			> span {
+				margin-top: -6px;
+			}
+			.border-fixer {
+				display:block;
+				position: absolute;
+				height: 2px;
+				width: 100%;
+				bottom:-2px;
+				left: 0px;
+				background: @menuDropBack;
+				z-index:1001;
+			}
+			&:after {
+				margin-top: -13px;
+			}
+		}
+		&:first-child:hover > .item {
+			.border-radius(6px 6px 0 6px);
+		}
+		&.parent:first-child:hover > .item {
+			.border-radius(6px 6px 0 0);
+		}
+	}
+
+	// Default items
+	li {
+		&:hover, &.active:hover {
+			> .dropdown {
+				left: 0;
+				top: auto;
+				opacity: 1;
+			}
+		}
+
+		&:hover > .item {
+			color: @menuTextHover !important;
+			text-shadow: -1px -1px 0 @menuTextShadow;
+			#gradient > .vertical-three-colors(lighten(@menuDropBack,15%), @menuDropBack, 75%, @menuDropBack);
+			.box-shadow(@menuInsetShadow);
+			border: 1px solid @menuBorder;
+			&:after {
+				color: @menuTextHover;
+			}
+		}
+		&.active > .item {
+			color: @menuTextHover !important;
+			&:after {
+				color: @menuTextHover;
+			}
+		}
+	}
+
+	// Parent items
+	li.parent {
+		&:hover {
+			
+		}
+	}
+
+	// Dropdown styling
+	.dropdown {
+		ul {
+			li {
+				&:hover, &.active {
+					background: none;
+					padding-top: 1px;
+
+					> .item {
+						#gradient > .vertical-three-colors(@menuDropBack, darken(@menuDropBack,5%), 50%, darken(@menuDropBack, 10%));
+						.box-shadow(inset 0 1px 4px rgba(0,0,0,0.4));
+						border-top: 0;
+						margin: -1px -1px -2px;
+						padding: 9px 19px 10px;
+
+						// Right border fixer
+						.border-fixer {
+							display:block;
+							position: absolute;
+							height: 100%;
+							width: 2px;
+							right:-1px;
+							top: 0px;
+							background: @menuDropBack;
+						}
+					}
+				}
+
+				&.parent {
+					&:hover {
+						> .item {
+							
+						}
+					}
+				}
+			}
+		}
+
+		// Grouped styling
+		.grouped {
+			&.parent {
+				&:hover {
+					> .item {
+						
+					}
+				}
+			}
+			ol {
+				> li:hover {
+					> .item {
+						padding-top: 4px;
+						padding-bottom: 5px;
+						&:before {
+							top: 5px;
+							left: 7px;
+						}
+					}
+				}
+			}
+		}
+
+		// Module styling
+		.modules {
+			&:hover, ul li:hover {
+				padding-top: 0 !important;
+			}
+		}
+	}
+
+	// Flyout dropdowns (3rd Level +)
+	.dropdown li:hover > .flyout {
+		left: 100%;
+		top: 1px;
+		margin-left: -2px;
+		border-top: 0;
+		.border-radius(0 5px 5px 5px);
+		.box-shadow(@menuFullShadow);
+	}
+}

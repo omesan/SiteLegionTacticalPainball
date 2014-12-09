@@ -1,0 +1,200 @@
+/**
+ * @version   $Id: body-dark.less 7387 2013-02-08 18:44:07Z arifin $
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2014 RocketTheme, LLC
+ * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+.main-surround {
+	color: @bodyTextLight;
+	.title, .component-content h2 {
+		color: @bodyTextLight;
+		text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+	}
+	a {
+		&:hover {
+			color: @bodyTextLight;
+		}
+	}
+	
+	// Core
+	h1, h2, h3, h4, h5, h6 {
+		color: @bodyTitleLight;
+	}
+
+	.box4 {
+		color: @bodyTextLight;
+		.title, .component-content h2 {
+			color: @bodyTextLight;
+			text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+		}
+		a {
+			&:hover {
+				color: @bodyTextLight;
+			}
+		}
+	}
+
+	// Modules
+	.box1 {
+		background: @bodyDark;
+		.box-shadow(0 0 6px rgba(0, 0, 0, 0.2));
+	}
+	.box2 {
+		border: 1px solid #111111;
+		#gradient > .vertical-three-colors(#4D4D4D, #4D4D4D, 25%, darken(#4D4D4D, 6%));
+		&.title1 {
+			.title {
+				border: none;
+				border-bottom: 1px solid @black;
+			}
+		}
+	}
+
+	.title1.rt-box2-stack {
+		.title {border: 1px solid #111111;}
+	}
+
+	// RokSprocket - Mosaic
+	.sprocket-mosaic-item {
+		background-color: @bodyDark;
+	}
+
+	// RokSprocket - Tabs
+	.sprocket-tabs-panels {
+		background: @bodyDark;
+		.box-shadow(0 3px 6px rgba(0, 0, 0, 0.2));
+	}
+	.sprocket-tabs-nav {
+		li {
+			&.active, &.active:hover {
+				.sprocket-tabs-inner {
+					.box-shadow(0 2px 6px rgba(0, 0, 0, 0.2));
+					background: @bodyDark;
+					color: @white;
+					text-shadow: none;
+				}
+			}
+			&:hover {
+				.sprocket-tabs-inner {
+					#gradient > .vertical-three-colors(lighten(@main-accent,4%), @main-accent, 45%, darken(@main-accent,4%));
+					color: @white;
+					text-shadow: -1px -1px 1px rgba(0,0,0,0.4);
+					.box-shadow(0 0 6px rgba(0, 0, 0, 0.1));
+				}
+			}
+			.sprocket-tabs-inner {
+				background-color: lighten(@bodyDark, 8%);
+				.box-shadow(~"0 0 6px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(225,225,225,0.2)");
+			}
+		}
+	}
+}
+
+// Article Index
+.component-content {
+	#article-index {
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		ul {
+			li {
+				a {
+					border-bottom: 1px solid rgba(255, 255, 255, 0.2);				
+					&:hover {
+						background: rgba(255, 255, 255, 0.1);
+					}					
+				}
+			}
+		}
+	}
+}
+
+// Color Tweaking on Dark Style
+.component-content {
+	legend {
+		color: inherit;
+		border-bottom: 1px solid #555555;
+	}
+	.contact .title	{
+		background-image: linear-gradient(to bottom, #333333, #000000);
+		background-color: #222222;
+		border: 1px solid #222222;
+		text-shadow: none;
+	}
+	table tr {
+		&.even, &.cat-list-row0 {
+			background: rgba(0,0,0,0.5);
+			border-bottom: 1px dotted #555555;
+		}
+		&.odd, &.cat-list-row1 {
+			background: rgba(0,0,0,0.8);
+			border-bottom: 1px dotted #555555;
+		}		
+	}
+}
+
+// Menu in Module
+body {
+	.module-content ul.menu {
+		ul {
+			margin-left: 15px;
+		}
+		li.current.active > a, li > a:hover, li#current.active > a {
+			color: #DFDFDF;
+		}
+		li a:before, li .item:before, li .separator:before {
+			background: #000000;
+		}
+	}	
+}
+
+/* K2 Dark Style */
+body {
+	#k2Container.latestView .latestItemsCategory h2:before {
+		color: rgba(255, 255, 255, 0.5) !important;
+	}
+	#k2Container {
+		input.inputbox, select, input[type="file"] {
+			border: 1px solid #222222 !important;
+			background: #757575 !important;
+			color: #dfdfdf !important;
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset !important;
+		}		
+		.defaultSkin table.mceLayout {
+			background: #dfdfdf !important;
+		}
+	}
+	#k2Container {
+		.latestItemDateCreated,
+		.latestItemCategory span,
+		.latestItemTagsBlock span,
+		.catItemDateCreated,
+		.catItemAuthor,
+		.catItemCategory span,
+		.catItemTagsBlock span,
+		.tagItemDateCreated,
+		.tagItemCategory span,
+		.userItemDateCreated,
+		.userItemCategory span,
+		.userItemTagsBlock span,
+		.itemDateCreated,
+		.itemAuthor,
+		.itemTextResizerTitle,
+		.itemRatingBlock,
+		.itemRatingBlock span,
+		.itemContentFooter,
+		.itemCategory span,
+		.itemTagsBlock span,
+		.genericItemHeader span,
+		.genericItemCategory span {
+			color: rgba(255, 255, 255, 0.5) !important;
+		}
+	}	
+	#k2Container {
+		div.itemSocialSharing {
+			background: #888888;
+			border-radius: 5px;
+			margin: 15px 0;
+			padding: 15px 15px 0;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) inset;
+		}
+	}
+}

@@ -1,0 +1,501 @@
+/**
+* @version   $Id: mediaqueries.less 12494 2013-08-07 11:03:32Z james $
+* @author    RocketTheme http://www.rockettheme.com
+* @copyright Copyright (C) 2007 - 2014 RocketTheme, LLC
+* @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+*/
+
+// Large Mode
+@media only screen and (min-width: 1315px) {
+	.visible-large {
+		display: inherit !important;
+	}
+	.hidden-large {
+		display: none !important;
+	}
+	.visible-desktop {
+		display: inherit !important;
+	}
+	.hidden-desktop {
+		display: none !important;
+	}
+	// Demo
+	body .rt-grid-4 .search #mod-search-searchword {
+		width: 283px;
+	}
+}
+
+// Desktop Modes
+
+@media only screen and (min-width: 1075px) and (max-width: 1314px) {
+	.visible-large {
+		display: none !important;
+	}
+	.hidden-large {
+		display: inherit !important;
+	}
+	body {
+		.visible-desktop {
+			display: inherit !important;
+		}
+		.hidden-desktop {
+			display: none !important;
+		}		
+	}
+
+	// Body
+	.right-top-pointer {
+		top: 48px;
+	}
+	.left-top-pointer {
+		bottom: 15px;
+	}
+	.right-btm-pointer {
+		top: 14px;
+	}
+	.left-btm-pointer {
+		bottom: 40px;
+	}
+
+	// Rok Gallery
+	.rokgallery-wrapper {
+		.rg-ss-title {
+			font-size: 240%;
+		}
+		.rg-ss-caption {
+			font-size: 160%;
+		}
+	}
+	
+	// Demo
+	body .rt-grid-4 .search #mod-search-searchword {
+		width: 203px;
+	}
+}
+
+@media (min-width: 883px) and (max-width: 1074px) {
+	body {
+		.visible-tablet {
+			display: inherit !important;
+		}
+		.hidden-tablet {
+			display: none !important;
+		}
+	}
+
+	.hidden-desktop {
+		display: inherit !important;
+	}
+	.visible-desktop {
+		display: none !important;
+	}
+	.visible-large {
+		display: none !important;
+	}
+	.hidden-large {
+		display: inherit !important;
+	}
+
+	// Core
+	body {
+		h1,h2,h3 {
+			font-size: 200%;
+			&.title {
+				font-size: 200%;
+			}
+		}
+	}
+
+	// Body
+	.right-top-pointer {
+		top: 54px;
+	}
+	.left-top-pointer {
+		bottom: 20px;
+	}
+	.right-btm-pointer {
+		top: 19px;
+	}
+	.left-btm-pointer {
+		bottom: 45px;
+	}
+
+	// Rok Gallery
+	.rokgallery-wrapper {
+		.rg-ss-info {
+			margin-top: -40px;
+		}
+		.rg-ss-title {
+			font-size: 210%;
+			padding: 5px 10px;
+		}
+		.rg-ss-caption {
+			font-size: 120%;
+			padding: 5px 10px;
+		}
+		.rg-ss-controls .next, .rg-ss-controls .prev {
+			margin-top: -20px;
+		}
+	}
+
+
+	// Contact Form
+	body #contact-form {
+		legend {
+			font-size: 1em;
+			line-height: 2em;
+			width: 500px;
+			padding-bottom: 15px;
+		}
+		textarea {
+			width: 300px !important;
+			resize: none;
+		}
+	}	
+
+	// K2
+	body #k2Container h2, body #k2Container h2 a, body #k2Container h3, body #k2Container h3 a {font-size: 1.5em !important;}
+	body #k2Container .subCategoryContainer, body #k2Container .itemContainer, body #k2Container .latestItemsContainer {width: 100% !important; float: none;}
+	body #k2Container.itemListView .itemListCategory h2, body #k2Container.latestView .latestItemsCategory h2 {margin: 10px 0;}
+	body #k2Container.itemListView .itemListSubCategories .subCategory h2 {margin: 10px 0;}
+	body #k2Container.itemListView .itemListSubCategories .subCategory {margin-bottom: 5px !important;}
+	body #k2Container.itemView .itemToolbar, body #k2Container.itemView .itemRatingBlock, body #k2Container.itemView .itemAuthorLatest, body #k2Container.itemView .itemRelated {width: 100% !important; float: none;}	
+	
+	// Demo
+	
+	body .rt-grid-4 .search #mod-search-searchword {
+		width: 138px;
+	}
+	
+	// RokSprocket Mosaic
+	body {
+		.sprocket-mosaic-columns-1,
+		.sprocket-mosaic-columns-2,
+		.sprocket-mosaic-columns-3,
+		.sprocket-mosaic-columns-4,
+		.sprocket-mosaic-columns-5,
+		.sprocket-mosaic-columns-6 {
+			[data-mosaic-item] {
+				width: 50%;
+			}
+		}										
+	}
+}
+
+// Mobile Modes
+@media (max-width: 882px) {
+	body {
+    	padding: 0;
+  	}
+  	body {
+		.visible-phone {
+			display: inherit !important;
+		}
+		.hidden-phone {
+			display: none !important;
+		}  		
+  	}
+	.hidden-desktop {
+		display: inherit !important;
+	}
+	.visible-desktop {
+		display: none !important;
+	}
+	.hidden-large {
+		display: inherit !important;
+	}
+	.visible-large {
+		display: none !important;
+	}
+
+	// Logo
+	#rt-logo {
+		margin: 0 auto;
+	}
+
+	// Header
+	.horizontal-login {
+		display: none;
+	}
+
+	// Body
+	.right-top-pointer {
+		top: 83px;
+	}
+	.right-btm-pointer {
+		top: 48px;
+	}
+
+	// Joomla Core
+	body .component-content {
+		.column-1, .column-2, .column-3, .column-4 {
+			width: 100% !important;
+			float: none !important;
+			margin: 0 !important;
+		}
+	}
+
+	// Features
+	#gantry-totop {
+		margin: 0 auto;
+		text-align: center;
+		width: 100%;
+	}
+
+	// Extras
+	.gantry-width-20, .gantry-width-25, .gantry-width-30, .gantry-width-33, .gantry-width-40, .gantry-width-50, .gantry-width-60, .gantry-width-66, .gantry-width-70, .gantry-width-75, .gantry-width-80 {
+		width: 100%;
+	}
+	.gantry-width-spacer {
+		margin: 5px;
+	}
+	.gantry-width-block {
+		float: none;
+	}
+
+	.row {
+		margin: 0;
+		display: block;
+
+		.cell {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	.form-horizontal {
+		.control-group {
+			.control-label {
+				float:none;
+				width: auto;
+				text-align:left;
+			}
+			.controls {
+				margin-left: 0;
+			}
+		}
+	}
+	select {
+		width: 100%;
+	}
+
+	//RokGallery
+	.rokgallery-wrapper {
+		.rg-ss-info {
+			display: none !important;
+		}
+		.rg-ss-controls {
+			display: none;
+			.prev, .next {
+				margin-top: 0;
+				width: 28px;
+				height: 28px;
+				font-size: 1.1em;
+				line-height: 29px;
+				top: 20px;
+				.border-radius(4px);
+			}
+			.prev {
+				left: inherit;
+				right: 52px;
+			}
+			.next {
+				right: 20px;
+			}
+		}
+	}
+	// Demo
+	body .rt-suspend {
+		margin-top: 15px;
+	}
+	body {
+		.rt-block.rt-box2-stack {
+			margin: 10px !important;
+			padding: 15px !important;
+		}
+	}
+}
+
+@media only screen and (min-width: 595px) and (max-width: 882px) {
+
+	// Core
+	.title, .component-content h2 {
+		font-size: 170%;
+	}
+
+	// Body
+	.right-top-pointer {
+		top: 62px;
+	}
+	.left-top-pointer {
+		bottom: 28px;
+	}
+	.right-btm-pointer {
+		top: 27px;
+	}
+	.left-btm-pointer {
+		bottom: 54px;
+	}
+
+	// Rok Ajax Search
+	#roksearch_search_str {
+		width: 97%;
+	}
+
+	// RokSprocket - Mosaic
+	.sprocket-mosaic-filter, .sprocket-mosaic-order {
+		font-size: 0.9em;
+	}
+	body {
+		.sprocket-mosaic-columns-1,
+		.sprocket-mosaic-columns-2,
+		.sprocket-mosaic-columns-3,
+		.sprocket-mosaic-columns-4,
+		.sprocket-mosaic-columns-5,
+		.sprocket-mosaic-columns-6 {
+			[data-mosaic-item] {
+				width: 50%;
+			}
+		}										
+	}
+	
+
+	// RokSprocket - Features - Showcase
+	.layout-showcase {
+		.sprocket-features-arrows {
+			.prev.arrow, .next.arrow {
+				width: 40px;
+				height: 40px;
+				font-size: 1.7em;
+			}
+		}
+	}
+
+	// Extra's
+	a#gantry-totop {
+		padding-right: 0;
+	}
+
+	// K2
+	body #k2Container h2, body #k2Container h2 a, body #k2Container h3, body #k2Container h3 a {font-size: 1.3em !important;}
+	body #k2Container .subCategoryContainer, body #k2Container .itemContainer, body #k2Container .latestItemsContainer {width: 100% !important; float: none;}
+	body #k2Container.itemListView .itemListCategory h2, body #k2Container.latestView .latestItemsCategory h2 {margin: 5px 0;}
+	body #k2Container.itemListView .itemListSubCategories .subCategory h2 {margin: 5px 0;}
+	body #k2Container.itemListView .itemListSubCategories .subCategory {margin-bottom: 5px !important;}
+	body #k2Container.itemView .itemToolbar, body #k2Container.itemView .itemRatingBlock, body #k2Container.itemView .itemAuthorLatest, body #k2Container.itemView .itemRelated {width: 100% !important; float: none;}	
+
+}
+@media only screen and (max-width: 594px) {
+
+	// Core
+	.title, .component-content h2 {
+		font-size: 160%;
+	}
+	.input-xxlarge, .input-xlarge, .input-large {
+		width: 100%;
+	}
+	input.span2, textarea.span2, .uneditable-input.span2 {
+		width: 90px;
+	}
+
+	// Header
+	#slideshow-spacer {
+		display: none !important;
+	}
+
+	// Body
+	body .left-btm-pointer, body .left-top-pointer, body .right-top-pointer, body .right-btm-pointer {
+		display: none;
+	}
+	#rt-mainbody-surround, .rt-body-btm {
+		margin: 0;
+	}
+	.rt-body-top {
+		margin: -60px 0 0 0;
+	}
+	#rt-top-surround, #rt-footer-surround .rt-footer-bg {
+		margin: 0;
+	}
+	.blog-published {
+		display: none !important;
+	}
+	.rt-footer-bg {
+		top: -120px;
+	}
+
+	// Footer
+	body #rt-footer-surround {
+		margin-top: -150px;
+	}
+
+	// RokAjaxSearch
+	#roksearch_results {
+		width: auto;
+	}
+	#roksearch_search_str {
+		width: 96%;
+	}
+
+	// RokSprocket - Mosaic
+	.sprocket-mosaic-filter, .sprocket-mosaic-order {
+		font-size: 0.8em;
+	}
+	body {
+		.sprocket-mosaic-columns-1,
+		.sprocket-mosaic-columns-2,
+		.sprocket-mosaic-columns-3,
+		.sprocket-mosaic-columns-4,
+		.sprocket-mosaic-columns-5,
+		.sprocket-mosaic-columns-6 {
+			[data-mosaic-item] {
+				width: 100%;
+			}
+		}										
+	}
+
+	// RokSprocket - Tabs
+	.sprocket-tabs-nav li {
+		width: 100%;
+	}
+
+	// RokSprocket - Features - Showcase
+	.layout-showcase {
+		.sprocket-features-arrows {
+			.prev.arrow, .next.arrow {
+				width: 40px;
+				height: 40px;
+				font-size: 1.7em;
+			}
+		}
+	}
+
+	// Contact Form
+	body #contact-form {
+		legend {
+			font-size: 1em;
+			line-height: 2em;
+			width: 220px;
+			padding-bottom: 15px;
+		}
+		fieldset dt, fieldset dd {
+			float: none !important;
+		}
+		textarea {
+			width: 205px !important;
+			resize: none;
+		}
+	}
+
+	// Extra's
+	a#gantry-totop {
+		padding-right: 0;
+	}
+
+	// K2
+	body #k2Container h2, body #k2Container h2 a, body #k2Container h3, body #k2Container h3 a {font-size: 1.0em !important;}
+	body #k2Container .subCategoryContainer, body #k2Container .itemContainer, body #k2Container .latestItemsContainer {width: 100% !important; float: none;}
+	body #k2Container.itemListView .itemListCategory h2, body #k2Container.latestView .latestItemsCategory h2 {margin: 5px 0;}
+	body #k2Container.itemListView .itemListSubCategories .subCategory h2 {margin: 5px 0;}
+	body #k2Container.itemListView .itemListSubCategories .subCategory {margin-bottom: 5px !important;}
+	body #k2Container.itemView .itemToolbar, body #k2Container.itemView .itemRatingBlock, body #k2Container.itemView .itemAuthorLatest, body #k2Container.itemView .itemRelated {width: 100% !important; float: none;}	
+}

@@ -1,0 +1,44 @@
+/* Layout - Sprocket Lists - Core */
+.sprocket-lists {position: relative;}
+.sprocket-lists:after {display: table;content: "";*zoom: 1;clear: both;}
+.sprocket-lists ul {list-style: none !important;margin: 0;padding: 0;}
+.sprocket-lists-container {overflow: hidden;padding: 0 !important;}
+
+/* Layout - Sprocket Lists - Titles */
+.sprocket-lists-title {position: relative;padding: 12px 12px 12px 10px !important;font-size: 1.2em !important;line-height: 1.2em !important;margin: -1px -1px 1px -1px !important;cursor: pointer;}
+.sprocket-lists-title.padding {padding-right: 35px;}
+.sprocket-lists-title .indicator {position: absolute;top: 50%;right: 10px;margin-top: -9px;display: block;width: 18px;height: 18px;border-radius: 1em;cursor: pointer;text-align: center;line-height: 1.1em;font-weight: normal;}
+.active .sprocket-lists-title .indicator {display: none;}
+.active .sprocket-lists-title .indicator span {position: absolute;right: 50%;margin-right: -4px;display: inline-block;}
+
+/* Layout - Sprocket Lists - Items */
+.sprocket-lists-item {display: block;position: relative;}
+.active .sprocket-lists-item {opacity: 1;margin-bottom: 0;}
+.sprocket-lists-item .sprocket-padding {padding: 10px 10px 20px 10px;display: block;}
+.sprocket-lists-image {float: left;margin: 0 15px 15px 0;}
+
+/* Layout - Sprocket Lists - Navigation */
+.sprocket-lists-nav {display: table;width: 100%;padding: 5px;}
+.sprocket-lists-pagination {display: table-cell;vertical-align: middle;}
+.sprocket-lists-pagination ul {float: left;margin: 0 !important;padding: 0 !important;}
+.sprocket-lists-pagination li {display: inline-block;padding: 4px !important;opacity: 0.4;border-radius: 1em;cursor: pointer;}
+.sprocket-lists-pagination li.active {opacity: 1;}
+.sprocket-lists-pagination li span {display: none;font-size: 0.85em;line-height: 1em;}
+.sprocket-lists-pagination-hidden {display: none;}
+.sprocket-lists-arrows {display: table-cell;vertical-align: middle;}
+.sprocket-lists-arrow ul {float: right;margin: 0 !important;padding: 0 !important;}
+.sprocket-lists-arrows .arrow {position: relative;display: block;border-radius: 2px;width: 20px;height:20px;border-radius: 1em;opacity: 0.7;cursor: pointer;float: right;margin-left: 5px;text-align: center;font-size: 1.1em;}
+.sprocket-lists-arrows .arrow span {display: none;}
+.sprocket-lists-arrows .arrow:hover {opacity: 1;}
+.sprocket-lists-arrows .arrow:before {content: '';width: 0;height: 0;position: absolute;top: 50%;border-top: 4px solid transparent;border-bottom: 4px solid transparent;}
+.sprocket-lists-arrows .prev:before {left: 50%;margin-left: -4px;margin-top: -14px;content: '\f053';font-family: FontAwesome;font-size: 0.8em;}
+.sprocket-lists-arrows .next:before {right: 50%;margin-right: 2px;margin-top: -14px;content: '\f054';font-family: FontAwesome;font-size: 0.8em;}
+
+/* Layout - Sprocket Lists - Colors */
+.active .sprocket-lists-title .indicator:before {border-bottom: 6px solid #fff;}
+
+/* Layout - Sprocket Lists - Transitions */
+.sprocket-lists-arrows .arrow, .sprocket-lists-title .indicator {-webkit-transition: opacity 0.2s ease-in;-moz-transition: opacity 0.2s ease-in;-o-transition: opacity 0.2s ease-in;transition: opacity 0.2s ease-in;}
+
+/* Spinner */
+.sprocket-lists.loading .spinner {width: 16px;height:16px;background-image: url(data:image/gif;base64,R0lGODlhEAAQALMAAP8A/7CxtXBxdX1+gpaXm6OkqMnKzry+womLj7y9womKjwAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQBCgAAACwAAAAAEAAQAAAESBDICUqhmFqbZwjVBhAE9n3hSJbeSa1sm5HUcXQTggC2jeu63q0D3PlwAB3FYMgMBhgmk/J8LqUAgQBQhV6z2q0VF94iJ9pOBAAh+QQBCgALACwAAAAAEAAQAAAES3DJuUKgmFqb5znVthQF9h1JOJKl96UT27oZSRlGNxHEguM6Hu+X6wh7QN2CRxEIMggExumkKKLSCfU5GCyu0Sm36w3ryF7lpNuJAAAh+QQBCgALACwAAAAAEAAQAAAESHDJuc6hmFqbpzHVtgQB9n3hSJbeSa1sm5GUIHRTUSy2jeu63q0D3PlwCx1lMMgQCBgmk/J8LqULBGJRhV6z2q0VF94iJ9pOBAAh+QQBCgALACwAAAAAEAAQAAAESHDJuYyhmFqbpxDVthwH9n3hSJbeSa1sm5HUMHRTECy2jeu63q0D3PlwCx0FgcgUChgmk/J8LqULAmFRhV6z2q0VF94iJ9pOBAAh+QQBCgALACwAAAAAEAAQAAAESHDJuYSgmFqb5xjVthgG9n3hSJbeSa1sm5EUgnTTcSy2jeu63q0D3PlwCx2FQMgEAhgmk/J8LqWLQmFRhV6z2q0VF94iJ9pOBAAh+QQBCgALACwAAAAAEAAQAAAESHDJucagmFqbJ0LVtggC9n3hSJbeSa1sm5EUQXSTYSy2jeu63q0D3PlwCx2lUMgcDhgmk/J8LqWLQGBRhV6z2q0VF94iJ9pOBAAh+QQBCgALACwAAAAAEAAQAAAESHDJuRCimFqbJyHVtgwD9n3hSJbeSa1sm5FUUXSTICy2jeu63q0D3PlwCx0lEMgYDBgmk/J8LqWLw2FRhV6z2q0VF94iJ9pOBAAh+QQBCgALACwAAAAAEAAQAAAESHDJuQihmFqbZynVtiAI9n3hSJbeSa1sm5FUEHTTMCy2jeu63q0D3PlwCx3lcMgIBBgmk/J8LqULg2FRhV6z2q0VF94iJ9pOBAA7);}

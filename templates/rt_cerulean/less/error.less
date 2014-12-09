@@ -1,0 +1,61 @@
+/**
+* @version   $Id: error.less 5677 2012-12-03 16:34:33Z kevin $
+* @author    RocketTheme http://www.rockettheme.com
+* @copyright Copyright (C) 2007 - 2014 RocketTheme, LLC
+* @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+*/
+
+.rt-error-content {
+	.set-bg-color(@main-body);
+	padding: 15px;
+	margin-top: 15px;
+	margin: 0 auto;
+	.box-shadow(0 0 8px rgba(0,0,0,0.5));
+}
+
+.error {
+	&.rt-top-section {
+		margin: 0;
+	}
+	#rt-top-surround {
+		padding-bottom: 15px;
+	}
+}
+
+.unsupported {
+	color: @bodyTextLight;
+	a:hover {
+		color: @bodyTextLight;
+	}
+	h1 {
+		color: @white;
+	}
+}
+
+@media only screen and (min-width: 1020px) and (max-width: 1259px) {
+
+}
+
+@media only screen and (min-width: 828px) and (max-width: 1019px) {
+	.error-title {
+		font-size: 1.8em;
+	}
+}
+
+@media only screen and (min-width: 541px) and (max-width: 827px) {
+	.rt-error-content {
+		width: auto;
+	}
+	.error-title {
+		font-size: 1.8em;
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	.rt-error-content {
+		width: auto;
+	}
+	.error-title {
+		font-size: 1.6em;
+	}
+}

@@ -1,0 +1,122 @@
+// Essentials -----------------
+@white:						#ffffff;
+@offwhite:				#F5F5F5;
+@black: 					#000000;
+@light-grey:				#cccccc;
+
+@baseFontSize:			14px;
+@baseLineHeight:		20px;
+
+// Body ------------------------
+.set-bg-color (light) {
+	background-color:   #f2f2f2;
+}
+.set-bg-color (dark) {
+	background-color:    #272727;
+}
+
+.set-footer-top (redcolor) {
+	#gradient > .vertical-three-colors(#2C2423, #2C2423, 35%, #191913);
+}
+.set-footer-top (bluecolor) {
+	#gradient > .vertical-three-colors(#22282B, #22282B, 35%, #131719);
+}
+.set-footer-top (greencolor) {
+	#gradient > .vertical-three-colors(#292D24, #292D24, 35%, #141812);
+}
+.set-footer-top (orangecolor) {
+	#gradient > .vertical-three-colors(#2C2423, #2C2423, 35%, #191913);
+}
+
+//@bodyBackground:		@bodyBackground+@main-body;
+@bodybackground2:		#f0f0f0;
+@bodybackground3:		#fcfcfc;
+@bodybackground4:		#eaeaea;
+@bodytext:				#6e6e6e;
+@bodyTextLight:			#dfdfdf;
+@bodyTextDark:			#333333;
+@bodytitle:				#303030;
+@bodyTitleDark:        	@bodytitle;
+@bodyTitleLight:        #cccccc;
+@bodyborder:			#d5d5d5;
+@bodyborder2:			#dddddd;
+@bodyborder3:			#d1d1d1;
+@bodycontrast:			#ffffff;
+@lightTextShadow:       -1px -1px 1px rgba(225,225,225,0.9);
+@bodyDark:              #363636;
+
+// Fonts
+@font-face {
+	font-family: 'CasperRegular';src: url('../fonts/casper-webfont.eot');src: url('../fonts/casper-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/casper-webfont.woff') format('woff'),url('../fonts/casper-webfont.ttf') format('truetype'),url('../fonts/casper-webfont.svg#casper') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// Images
+@bgImage:         "../images/backgrounds";
+@bodyImage:         "../images/"+@main-body;
+@accent2Image:    "../images/accent2/"+@main-accent2;
+@topBtmImage:     "../images/dark";
+
+// Main Top --------------------
+@maintopbackground:		#f0f0f0;
+
+// Footer ----------------------
+@footerbackground:		#eeeeee;
+@footertext:			#6e6e6e;
+
+// Form Feedbacks --------------
+@warningText:             #c09853;
+@warningBackground:       #fcf8e3;
+@warningBorder:           darken(spin(@warningBackground, -10), 3%);
+
+@errorText:               #b94a48;
+@errorBackground:         #f2dede;
+@errorBorder:             darken(spin(@errorBackground, -10), 3%);
+
+@successText:             #468847;
+@successBackground:       #dff0d8;
+@successBorder:           darken(spin(@successBackground, -10), 5%);
+
+@infoText:                #3a87ad;
+@infoBackground:          #d9edf7;
+@infoBorder:              darken(spin(@infoBackground, -10), 7%);
+
+@monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace;
+
+// Base Menu variables
+@menuFontFamily:	'CasperRegular', Helvetica, sans-serif;
+@menuFontSize:		13px;
+@menuLineHeight:	21px;
+@menuItemRadius:	6px 6px 0 0;
+
+@menuInsetShadowSide:   none;
+@menuSideSize:      250px;
+
+// Horizontal forms & lists
+// -------------------------
+@horizontalComponentOffset:       160px;
+
+// RokSprocket
+@mosaicBackground:      #eaeaea;
+
+// Dark Header variables
+@menuTextColor:			#d8d8d8;
+@menuTextShadow:		rgba(0,0,0,0.5);
+@menuTextHover:			@white;
+@menuSubTextColor:		darken(@menuTextColor, 10%);
+@menuArrowColor:		darken(@menuTextColor, 20%);
+@menuMobileGradient:	darken(@menuDropBack,10%);
+@menuMobileBack:		#444444;
+@menuBorder: 			darken(@main-accent, 15%);
+@menuItemBorder:        rgba(0,0,0,0.1);
+@menuDropBack:			@main-accent;
+@menuDropShadow:		0px 2px 2px rgba(0,0,0,0.2);
+@menuInsetShadow:		~"0 1px 0 rgba(225, 225, 225, 0.3) inset";
+@menuFullShadow:		~"0 1px 0 rgba(225, 225, 225, 0.3) inset";
+@menuActiveBorder:		rgba(225,225,225,0.4);
+@menuActiveBack:		darken(@menuDropBack, 8%);
+@menuActiveShadow:		~"inset 0px 1px 2px rgba(0,0,0,0.2), 0px 1px 0px #3c3c3c";
+@moduleHeaderColor:		lighten(@menuTextColor, 10%);
+@moduleTextColor:		darken(@menuTextColor, 10%);
+@moduleLinkColor:		@menuTextHover;

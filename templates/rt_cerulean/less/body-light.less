@@ -1,0 +1,97 @@
+/**
+ * @version   $Id: body-light.less 7231 2013-02-06 04:21:21Z arifin $
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2014 RocketTheme, LLC
+ * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+
+.main-surround {
+	color: @bodyTextDark;
+	.title, .component-content h2 {
+		color: @bodyTextDark;
+		text-shadow: 1px 1px 0 @bodycontrast;
+	}
+	a {
+		&:hover {
+			color: @bodyTextDark;
+		}
+	}
+	
+	// Core
+	h1, h2, h3, h4, h5, h6 {
+		color: @bodyTitleDark;
+	}
+
+	// Modules
+	.box1 {
+		background: @bodycontrast;
+		.box-shadow(0 0 6px rgba(0, 0, 0, 0.2));
+	}
+	.box2 {
+		color: @bodytitle;
+		border: 1px solid #d6d6d6;
+		#gradient > .vertical-three-colors(#f3f3f3, #f3f3f3, 25%, darken(#f3f3f3, 6%));
+		&.title1 {
+			.title {
+				border: none;
+				border-bottom: 1px solid #C4C4C4;
+			}
+		}
+	}
+	.title1.rt-box2-stack {
+		.title {border: 1px solid #d6d6d6;}
+	}
+
+	// RokSprocket - Mosaic
+	.sprocket-mosaic-item {
+		background-color: @white;
+	}
+
+	// RokSprocket - Tabs
+	.sprocket-tabs-panels {
+		background: @white;
+		.box-shadow(0 3px 6px rgba(0, 0, 0, 0.2));
+	}
+	.sprocket-tabs-nav {
+		li {
+			&.active, &.active:hover {
+				.sprocket-tabs-inner {
+					.box-shadow(0 2px 6px rgba(0, 0, 0, 0.2));
+					background: @white;
+					color: @black;
+					text-shadow: none;
+				}
+			}
+			&:hover {
+				.sprocket-tabs-inner {
+					#gradient > .vertical-three-colors(lighten(@main-accent,4%), @main-accent, 45%, darken(@main-accent,4%));
+					color: @white;
+					text-shadow: -1px -1px 1px rgba(0,0,0,0.4);
+					.box-shadow(0 0 6px rgba(0, 0, 0, 0.1));
+				}
+			}
+			.sprocket-tabs-inner {
+				background-color: #f5f5f5;
+				.box-shadow(~"0 0 6px rgba(0, 0, 0, 0.1), inset 0 1px 0 #ffffff");
+			}
+		}
+	}
+}
+
+// Article z-index
+.component-content {
+	#article-index {
+		background: rgba(0,0,0,0.1);
+		border: 1px solid rgba(0,0,0,0.1);
+		ul {
+			li {				
+				a {
+					border-bottom: 1px solid rgba(0,0,0,0.1);					
+					&:hover {
+						background: rgba(255,255,255,0.7);
+					}					
+				}			
+			}
+		}
+	}
+}
